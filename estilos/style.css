@@ -40,7 +40,7 @@ main {
     overflow: hidden; /* Foto ter uma borda */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
 
-    transition: width 0.3s, heigth 0.3s;
+    transition: width 0.6s, heigth 0.s;
     transition-timing-function: ease;
 }
 
@@ -55,4 +55,13 @@ main {
 #formulario {
     display: block;
     padding: 10px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    text-align: center;
 }
