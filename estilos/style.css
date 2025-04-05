@@ -15,7 +15,7 @@
 body, html {
     background-image: url(../imagens/espaço_agua-viva.jpg);
     background-size:cover;
-    background-position: right center;
+    background-position: center center;
     height: 100vh;
     width: 100vw;
 }
@@ -32,16 +32,16 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     background-color: transparent;
     width: 350px;
-    height: 470px;
+    height: 500px;
     border-radius: 20px;
     overflow: hidden; /* Foto ter uma borda */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
 
-    transition: width 0.3s, heigth 0.3s;
+    transform: translate(-50%, -50%); /* Centralizar DIV */
+    transition: width 0.5s, heigth 0.5s;
     transition-timing-function: ease;
 }
 
@@ -61,32 +61,56 @@ main {
 #formulario > h1 {
     text-align: center;
     color: white;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
 }
 
 #formulario > p {
     text-align: center;
     color: white;
-    font-weight: bold;
+    text-shadow: 2px 2px 7px black;
+    margin-bottom: 20px;
 }
 
 form > div.campo {
     display: block;
-    background-color: #1E88E5;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
+    border-radius: 8px;
+    margin-top: 7px;
+    margin-bottom: 20px;
 }
 
-form > div.campo2 {
-    display: block;
-    background-color: #1E88E5;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+div.campo > span {
+    color: white;
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #1E88E5;
+    font-size: 1em;
+    width: calc(100% - 50px); /* Posicionamento da caixa (largura) */
+    
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px); /* Altura da Caixa */
+}
+
+div.campo > input:hover {
+    border: 2px solid white;
+    transition: transform 0.5s, border 0.7s;
+    transition-timing-function: ease;
+}
+
+div.campo > input:focus-within {
+    color: white;
+    border: none;
 }
 
 form > input[type=submit] {
@@ -102,15 +126,36 @@ form > input[type=submit] {
     cursor: pointer;
 }
 
+form > input[type=submit]:hover {
+    border: 2px solid white;
+}
+
 form > input[type=submit]:active {
     background-color: #fff0f0;
     color: #1E88E5;
     text-align: center;
+    border: 2px solid #1E88E5;
+    transition: transform 0.1s, border 0.5s;
+    transition-timing-function: ease;
 }
 
-form > a.botao {
-    color: white;
+button {
+    display:block;
+    background-color: white;
+    margin-bottom: 7px;
+    color: #1E88E5;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: 2px solid black ;
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form > a.esqueci {
     display: block;
+    color: white;
     text-align: right;
     font-size: 1em;
     width: 100%;
@@ -118,6 +163,6 @@ form > a.botao {
     text-decoration: none;
 }
 
-form > a.botao:hover {
+form > a.esqueci:hover {
     text-decoration: underline;
 }

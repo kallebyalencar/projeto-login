@@ -9,23 +9,24 @@ Desktop 992 - 1200px
 Grandes telas: Acima de 1200px
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* Configuração para celular */
     body {
-        background-image: linear-gradient(to top, #fafad2ad, #02026d9d, lightblue  );
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.151), rgba(128, 128, 128, 0.459), rgba(255, 255, 255, 0.562)  );
     } 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Configuração para tablet */
     body {
-        background-image: linear-gradient(to top, #fafad2ad, #02026d9d, lightblue  );
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.151), rgba(128, 128, 128, 0.459), rgba(255, 255, 255, 0.562)  );
     } 
 
     #login {
         width: 90vw;
+        height: 400px
     }
 
     #imagem {
-        background-position: right top;
+        background-position: center center;
         float: right;
         width: 50%;
         height: 100%;
@@ -37,7 +38,7 @@ Grandes telas: Acima de 1200px
     }
 
     #formulario > h1 {
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     #formulario > p {
@@ -46,13 +47,14 @@ Grandes telas: Acima de 1200px
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* Configuração para desktop */
     body {
-        background-image: linear-gradient(to top, #fafad2ad, #02026d9d, lightblue  );
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.151), rgba(128, 128, 128, 0.459), rgba(255, 255, 255, 0.562)  );
     } 
 
     #login {
         width: 880px;
+        height: 400px;
     }
 
     #imagem {
