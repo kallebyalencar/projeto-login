@@ -17,19 +17,26 @@
             </div>
             <div id="formulario">
                 <h1>Bem vindo(a)</h1>
+                <p>Conectando você ao futuro da tecnologia. Pronto para começar a jornada?</p>
                 <form action="login.php" method="post">
                     
                     <div class="campo">
                         <span class="material-symbols-outlined">account_circle</span>
-                        <input type="email" name="login" id="ilogin" placeholder="E-mail">
+                        <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30">
                         <label for="ilogin"></label>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo2">
                         <span class="material-symbols-outlined">lock</span>
-                        <input type="password" name="senha" id="isenha" placeholder="Senha">
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
                         <label for="isenha"></label>
                     </div>
+
+                        <input type="submit" value="Entrar">
+
+                        <a href="esqueci.html" class="botao">
+                            Esqueceu sua senha?
+                        </a>
                 </form>
             </div>
         </section>
